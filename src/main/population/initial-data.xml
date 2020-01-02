@@ -73,11 +73,19 @@
 		<property name="userAccount" ref="administratorUserAccount" />
 	</bean>
 	
-	<!-- Configurations -->
+	<!-- Configuration -->
 	
 	<bean id="configuration1" class="acme.entities.configurations.Configuration">
 	<property name="spamWords" value="sex,sexo,hardcore,viagra,cialis,Nigeria,you've won,has ganado,million dolar,un millon de dólares"/>
 		<property name="threshold" value="1.0"/>	
+	</bean>
+	
+		<!-- Dashboard -->
+		
+	<bean id="dashboard" class="acme.entities.dashboards.Dashboard">
+		<property name="ratio1" value="0.0" />
+		<property name="ratio2" value="0.0" />
+		<property name="ratio3" value="0.0" />
 	</bean>
 
 	

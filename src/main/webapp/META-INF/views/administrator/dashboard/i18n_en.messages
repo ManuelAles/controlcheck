@@ -1,0 +1,15 @@
+# i18n_en.messages
+#
+# Copyright (c) 2019 Rafael Corchuelo.
+#
+# In keeping with the traditional purpose of furthering education and research, it is
+# the policy of the copyright owner to permit non-commercial use and redistribution of
+# this software. It has been tested carefully, but it is not guaranteed for any particular
+# purposes.  The copyright owner does not offer any warranties or representations, nor do
+# they accept any liabilities with respect to them.
+
+administrator.dashboard.form.label.ratio1 = The ratio of jobs that have a XXXX1:
+administrator.dashboard.form.label.ratio2 = The ratio of XXXX1 that include a XXXX2:
+administrator.dashboard.form.label.ratio3 = The ratio of applications that include a password-protected XXXX2:
+
+administrator.dashboard.form.button.return = Volver

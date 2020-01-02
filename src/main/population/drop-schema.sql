@@ -71,6 +71,10 @@
        drop 
        foreign key FK_l5q1f33vs2drypmbdhpdgwfv3;
 
+    alter table `xxxx1` 
+       drop 
+       foreign key `FKivqoqgqubr8hn5quyvcmi324`;
+
     drop table if exists `administrator`;
 
     drop table if exists `announcement`;
@@ -92,6 +96,8 @@
     drop table if exists `configuration`;
 
     drop table if exists `consumer`;
+
+    drop table if exists `dashboard`;
 
     drop table if exists `descriptor`;
 
@@ -118,5 +124,9 @@
     drop table if exists `user_account`;
 
     drop table if exists `worker`;
+
+    drop table if exists `xxxx1`;
+
+    drop table if exists `xxxx2`;
 
     drop table if exists `hibernate_sequence`;

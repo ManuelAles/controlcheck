@@ -63,6 +63,7 @@ master.menu.administrator.challenge.list = List challenges
 master.menu.administrator.challenge.createChallenge = Create challenge
 master.menu.administrator.configuration = Configuration
 master.menu.administrator.shutdown = Shut down
+master.menu.administrator.dashboard = Show dashboard
 
 # master.menu.provider ########################################################
 

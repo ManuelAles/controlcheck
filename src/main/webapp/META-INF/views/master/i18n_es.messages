@@ -64,6 +64,7 @@ master.menu.administrator.challenge.list = Listar retos
 master.menu.administrator.challenge.createChallenge = Crear reto
 master.menu.administrator.configuration = Configuracion
 master.menu.administrator.shutdown = Parar el sistema
+master.menu.administrator.dashboard = Mostrar métricas
 
 # master.menu.provider ########################################################
 

@@ -116,6 +116,15 @@
         primary key (`id`)
     ) engine=InnoDB;
 
+    create table `dashboard` (
+       `id` integer not null,
+        `version` integer not null,
+        `ratio1` double precision,
+        `ratio2` double precision,
+        `ratio3` double precision,
+        primary key (`id`)
+    ) engine=InnoDB;
+
     create table `descriptor` (
        `id` integer not null,
         `version` integer not null,
@@ -249,6 +258,22 @@
         primary key (`id`)
     ) engine=InnoDB;
 
+    create table `xxxx1` (
+       `id` integer not null,
+        `version` integer not null,
+        `more_info` varchar(255),
+        `text` varchar(255),
+        `job_id` integer not null,
+        primary key (`id`)
+    ) engine=InnoDB;
+
+    create table `xxxx2` (
+       `id` integer not null,
+        `version` integer not null,
+        `password` varchar(255),
+        primary key (`id`)
+    ) engine=InnoDB;
+
     create table `hibernate_sequence` (
        `next_val` bigint
     ) engine=InnoDB;
@@ -276,6 +301,9 @@ create index IDXg88gkl67vpjvt7ps3qc8toigb on `request` (`deadline`, `moment`);
 
     alter table `user_account` 
        add constraint UK_castjbvpeeus0r8lbpehiu0e4 unique (`username`);
+
+    alter table `xxxx1` 
+       add constraint UK_i2qt665lplguvu6lvrlntdf5q unique (`job_id`);
 
     alter table `administrator` 
        add constraint FK_2a5vcjo3stlfcwadosjfq49l1 
@@ -366,3 +394,8 @@ create index IDXg88gkl67vpjvt7ps3qc8toigb on `request` (`deadline`, `moment`);
        add constraint FK_l5q1f33vs2drypmbdhpdgwfv3 
        foreign key (`user_account_id`) 
        references `user_account` (`id`);
+
+    alter table `xxxx1` 
+       add constraint `FKivqoqgqubr8hn5quyvcmi324` 
+       foreign key (`job_id`) 
+       references `job` (`id`);

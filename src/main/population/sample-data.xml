@@ -850,9 +850,26 @@
 		<property name="job" ref="job5" />
 	</bean>
 	
+	<!-- XXXX1s -->
 	
+	<bean id="xxxx11" class="acme.entities.xxxx1s.XXXX1">
+		<property name="text" value="Sample xxxx1 01" />	
+		<property name="moreInfo">
+			<null />
+		</property>
+		<property name="job" ref="job1" />
+	</bean>
 	
+	<bean id="xxxx12" class="acme.entities.xxxx1s.XXXX1">
+		<property name="text" value="Sample xxxx1 01" />	
+		<property name="moreInfo">
+			<null />
+		</property>
+		<property name="job" ref="job2" />
+	</bean>
 	
+	<!-- XXXX2s -->
 
+	
 
 </beans>
