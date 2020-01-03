@@ -34,6 +34,16 @@ public class AdministratorDashboardShowService implements AbstractShowService<Ad
 		assert entity != null;
 		assert model != null;
 
+		double r1 = 0.0, r2 = 0.0, r3 = 0.0;
+
+		r1 = this.repository.ratio1();
+		r2 = this.repository.ratio2();
+		r3 = this.repository.ratio3();
+
+		entity.setRatio1(r1);
+		entity.setRatio2(r2);
+		entity.setRatio3(r3);
+
 		request.unbind(entity, model, "ratio1", "ratio2", "ratio3");
 
 	}
@@ -43,12 +53,8 @@ public class AdministratorDashboardShowService implements AbstractShowService<Ad
 		assert request != null;
 
 		Dashboard result;
-		double r1, r2, r3 = 0.0;
+
 		result = this.repository.findOne();
-
-		r1 = this.repository.ratio1();
-
-		result.setRatio1(r1);
 
 		return result;
 	}

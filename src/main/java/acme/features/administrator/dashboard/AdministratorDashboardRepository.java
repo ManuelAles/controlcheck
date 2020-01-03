@@ -16,10 +16,10 @@ public interface AdministratorDashboardRepository extends AbstractRepository {
 	@Query("select (cast(count(x) as float)/(select count(j) from Job j)) from XXXX1 x")
 	double ratio1();
 
-	@Query("select d from Dashboard d")
+	@Query("select (cast(count(x2) as float)/(select count(x1) from XXXX1 x1)) from XXXX2 x2")
 	double ratio2();
 
-	@Query("select d from Dashboard d")
+	@Query("select (cast(count(x) as float)/(select count(a) from Application a)) from XXXX2 x")
 	double ratio3();
 
 }

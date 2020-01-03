@@ -271,6 +271,9 @@
        `id` integer not null,
         `version` integer not null,
         `password` varchar(255),
+        `text` varchar(255),
+        `application_id` integer not null,
+        `xxxx1_id` integer not null,
         primary key (`id`)
     ) engine=InnoDB;
 
@@ -304,6 +307,12 @@ create index IDXg88gkl67vpjvt7ps3qc8toigb on `request` (`deadline`, `moment`);
 
     alter table `xxxx1` 
        add constraint UK_i2qt665lplguvu6lvrlntdf5q unique (`job_id`);
+
+    alter table `xxxx2` 
+       add constraint UK_entmh2dlhdwcmvmhg96w9ff82 unique (`application_id`);
+
+    alter table `xxxx2` 
+       add constraint UK_sw5idnymp8koc8qmi4ta9k3k1 unique (`xxxx1_id`);
 
     alter table `administrator` 
        add constraint FK_2a5vcjo3stlfcwadosjfq49l1 
@@ -399,3 +408,13 @@ create index IDXg88gkl67vpjvt7ps3qc8toigb on `request` (`deadline`, `moment`);
        add constraint `FKivqoqgqubr8hn5quyvcmi324` 
        foreign key (`job_id`) 
        references `job` (`id`);
+
+    alter table `xxxx2` 
+       add constraint `FK6cb8he5h1oa6nm2yppe7uddgw` 
+       foreign key (`application_id`) 
+       references `application` (`id`);
+
+    alter table `xxxx2` 
+       add constraint `FKsp9xlhsw9iuvq1y4of2ij6afw` 
+       foreign key (`xxxx1_id`) 
+       references `xxxx1` (`id`);

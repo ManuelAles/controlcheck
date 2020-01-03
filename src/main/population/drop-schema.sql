@@ -75,6 +75,14 @@
        drop 
        foreign key `FKivqoqgqubr8hn5quyvcmi324`;
 
+    alter table `xxxx2` 
+       drop 
+       foreign key `FK6cb8he5h1oa6nm2yppe7uddgw`;
+
+    alter table `xxxx2` 
+       drop 
+       foreign key `FKsp9xlhsw9iuvq1y4of2ij6afw`;
+
     drop table if exists `administrator`;
 
     drop table if exists `announcement`;
