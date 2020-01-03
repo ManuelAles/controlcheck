@@ -6,6 +6,7 @@ import org.springframework.stereotype.Service;
 
 import acme.entities.jobs.Job;
 import acme.entities.roles.Employer;
+import acme.entities.xxxx1s.XXXX1;
 import acme.framework.components.Model;
 import acme.framework.components.Request;
 import acme.framework.entities.Principal;
@@ -53,6 +54,16 @@ public class EmployerJobShowService implements AbstractShowService<Employer, Job
 		int numberOfApplications = 0;
 		numberOfApplications = this.repository.countApplicationsByJob(entity.getId());
 		model.setAttribute("applications", numberOfApplications);
+
+		Boolean hasXXXX1 = false;
+		XXXX1 xxxx1;
+		if (this.repository.XXXX1byJobId(entity.getId()) != null) {
+			hasXXXX1 = true;
+			xxxx1 = this.repository.XXXX1byJobId(entity.getId());
+			model.setAttribute("text", xxxx1.getText());
+			model.setAttribute("moreInfox", xxxx1.getMoreInfo());
+		}
+		model.setAttribute("hasXXXX1", hasXXXX1);
 
 	}
 

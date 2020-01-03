@@ -39,6 +39,8 @@ employer.job.error.workload = No se puede publicar un trabajo cuyo porcentaje de
 employer.job.error.applications = No puedes borrar un trabajo con solicitudes
 employer.job.error.finalMode = No puedes actualizar un trabajo publicado
 
+employer.job.form.label.text = Información del XXXX1:
+employer.job.form.label.moreInfox = Enlace de más información de XXXX1:
 
 employer.job.form.button.return = Volver
 

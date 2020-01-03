@@ -12,6 +12,7 @@ import acme.entities.descriptors.Descriptor;
 import acme.entities.duties.Duty;
 import acme.entities.jobs.Job;
 import acme.entities.roles.Employer;
+import acme.entities.xxxx1s.XXXX1;
 import acme.framework.repositories.AbstractRepository;
 
 @Repository
@@ -49,5 +50,8 @@ public interface EmployerJobRepository extends AbstractRepository {
 
 	@Query("select j from Job j")
 	Collection<Job> findAllJobs();
+
+	@Query("select x from XXXX1 x where x.job.id = ?1")
+	XXXX1 XXXX1byJobId(int id);
 
 }

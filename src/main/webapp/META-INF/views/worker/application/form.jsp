@@ -21,6 +21,11 @@
 	<acme:form-textbox code="worker.application.form.label.skills" path="skills" />
 	<acme:form-textbox code="worker.application.form.label.qualifications" path="qualifications" />
 	<acme:form-textarea code="worker.application.form.label.statement" path="statement" />
+	
+	<jstl:if test="${hasXXXX2 == true}">	
+	<acme:form-textbox code="worker.application.form.label.text" path="text" readonly="true" />
+	<acme:form-password code="worker.application.form.label.password" path="password"  readonly="true" />	
+	</jstl:if>
 
 
 	<acme:form-submit test="${command == 'create'}" 

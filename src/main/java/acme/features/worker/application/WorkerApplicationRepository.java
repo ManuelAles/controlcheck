@@ -10,6 +10,7 @@ import acme.entities.applications.Application;
 import acme.entities.configurations.Configuration;
 import acme.entities.jobs.Job;
 import acme.entities.roles.Worker;
+import acme.entities.xxxx2s.XXXX2;
 import acme.framework.repositories.AbstractRepository;
 
 @Repository
@@ -35,5 +36,8 @@ public interface WorkerApplicationRepository extends AbstractRepository {
 
 	@Query("select a from Application a where a.worker.id = ?1 and a.job.id = ?2")
 	Application findByJobAndWorker(int worker, int job);
+
+	@Query("select x from XXXX2 x where x.application.id = ?1")
+	XXXX2 XXXX2byApplicationId(int id);
 
 }

@@ -40,6 +40,8 @@ employer.job.error.workload = You can not publish a job whose percentage of tota
 employer.job.error.applications = You can not delete a job with applications
 employer.job.error.finalMode = You can not update published jobs
 
+employer.job.form.label.text = XXXX1 information:
+employer.job.form.label.moreInfox = Link of more information of XXXX1:
 
 employer.job.form.button.return = Return
 

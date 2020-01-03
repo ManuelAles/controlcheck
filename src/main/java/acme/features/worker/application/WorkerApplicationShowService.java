@@ -6,6 +6,7 @@ import org.springframework.stereotype.Service;
 
 import acme.entities.applications.Application;
 import acme.entities.roles.Worker;
+import acme.entities.xxxx2s.XXXX2;
 import acme.framework.components.Model;
 import acme.framework.components.Request;
 import acme.framework.entities.Principal;
@@ -47,6 +48,16 @@ public class WorkerApplicationShowService implements AbstractShowService<Worker,
 		assert model != null;
 
 		request.unbind(entity, model, "reference", "moment", "status", "statement", "skills", "qualifications", "job.title", "rejectedDecision");
+
+		Boolean hasXXXX2 = false;
+		XXXX2 xxxx2;
+		if (this.repository.XXXX2byApplicationId(entity.getId()) != null) {
+			hasXXXX2 = true;
+			xxxx2 = this.repository.XXXX2byApplicationId(entity.getId());
+			model.setAttribute("text", xxxx2.getText());
+			model.setAttribute("password", xxxx2.getPassword());
+		}
+		model.setAttribute("hasXXXX2", hasXXXX2);
 
 	}
 

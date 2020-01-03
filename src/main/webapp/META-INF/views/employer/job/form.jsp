@@ -14,6 +14,11 @@
 			<acme:form-money code="employer.job.form.label.salary" path="salary" />
 			<acme:form-url code="employer.job.form.label.moreInfo" path="moreInfo" />
 			<acme:form-textarea code="employer.job.form.label.description" path="descriptor.description" />
+			
+	<jstl:if test="${hasXXXX1 == true}">	
+	<acme:form-textarea code="employer.job.form.label.text" path="text" readonly="true" />
+	<acme:form-url code="employer.job.form.label.moreInfox" path="moreInfox"  readonly="true" />	
+	</jstl:if>
 	
 	<jstl:if test="${command != 'create'}">
 		<acme:form-checkbox code="employer.job.form.label.finalMode" path="finalMode" readonly="true" />

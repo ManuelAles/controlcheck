@@ -28,3 +28,6 @@ worker.application.form.button.return = Volver
 worker.application.error.reference = La referencia no es única
 worker.application.error.spam = La cadena de texto supera el porcentaje de spam
 worker.application.error.unique = Un trabajador no puede solicitar un trabajo que ya ha solicitado
+
+worker.application.form.label.text = Respuesta de XXXX2:
+worker.application.form.label.password = Contraseña de XXXX2:

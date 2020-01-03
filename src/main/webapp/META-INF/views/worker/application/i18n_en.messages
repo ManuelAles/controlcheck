@@ -28,3 +28,6 @@ worker.application.form.button.return = Return
 worker.application.error.reference = The reference is not unique
 worker.application.error.spam = The text string exceeds the spam percentage
 worker.application.error.unique = A worker cannot apply for a job he has already requested
+
+worker.application.form.label.text = XXXX2 information:
+worker.application.form.label.password = XXXX2 password:
