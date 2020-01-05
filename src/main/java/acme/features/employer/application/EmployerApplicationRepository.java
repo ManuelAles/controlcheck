@@ -8,6 +8,7 @@ import org.springframework.stereotype.Repository;
 
 import acme.entities.applications.Application;
 import acme.entities.configurations.Configuration;
+import acme.entities.xxxx2s.XXXX2;
 import acme.framework.repositories.AbstractRepository;
 
 @Repository
@@ -21,4 +22,7 @@ public interface EmployerApplicationRepository extends AbstractRepository {
 
 	@Query("select c from Configuration c")
 	Configuration selectConfiguration();
+
+	@Query("select x from XXXX2 x where x.application.id = ?1")
+	XXXX2 XXXX2byApplicationId(int id);
 }

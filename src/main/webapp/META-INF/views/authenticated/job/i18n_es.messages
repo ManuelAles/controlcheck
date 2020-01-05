@@ -24,3 +24,6 @@ authenticated.job.form.button.auditRecords = Lista de registros de auditoria de 
 authenticated.job.form.button.application = Mandar una solicitud para este trabajo
 
 authenticated.job.form.button.return = Volver
+
+authenticated.job.form.label.text = Información del XXXX1:
+authenticated.job.form.label.moreInfox = Enlace de más información de XXXX1:

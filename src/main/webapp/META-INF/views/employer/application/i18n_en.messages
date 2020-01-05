@@ -36,4 +36,7 @@ employer.application.error.status = Status must be ACCEPTED, REJECTED or PENDING
 employer.application.error.decision = To reject an application you must include a decision
 employer.application.error.spam = The rejection decision exceeds the spam percentage
 
+employer.application.form.label.text = XXXX2 reply:
+employer.application.form.label.password = XXXX2 password:
+
 

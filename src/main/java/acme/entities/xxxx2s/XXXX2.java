@@ -4,7 +4,6 @@ package acme.entities.xxxx2s;
 import javax.persistence.Entity;
 import javax.persistence.OneToOne;
 import javax.validation.Valid;
-import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
 
@@ -25,10 +24,9 @@ public class XXXX2 extends DomainEntity {
 
 	// Attributes -----------------------------------
 
-	@Pattern(regexp = "^(?=.*[0-9]){3}(?=.*[a-zA-Z]{8})(?=.*[ºª!\"·$%&/()=?¿¡'|@#~€¬`+´ç.,;:_^*¨Ç}{]{3})(?=\\S+$).{8,}$")
+	@Pattern(regexp = "^(?=.*[a-zA-Z]{8})(?=.*?[0-9]{1})(?=.*?[ºª!\"·$%&/()=?¿¡'|@#~€¬`+´ç.,;:_^*¨Ç}{]{1}).{10,}$")
 	private String				password;
 
-	@NotBlank
 	private String				text;
 
 	// Relationships -------------------------------------------------------------

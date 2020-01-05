@@ -15,6 +15,11 @@
 	<acme:form-url code="authenticated.job.form.label.moreInfo" path="moreInfo"/>
 	<acme:form-textarea code="authenticated.job.form.label.description" path="descriptor.description"/>
 	
+	<jstl:if test="${hasXXXX1 == true}">	
+	<acme:form-textarea code="authenticated.job.form.label.text" path="text" readonly="true" />
+	<acme:form-url code="authenticated.job.form.label.moreInfox" path="moreInfox"  readonly="true" />	
+	</jstl:if>
+	
 	<acme:form-return code="authenticated.job.form.button.return"/>
 	<br>
 	

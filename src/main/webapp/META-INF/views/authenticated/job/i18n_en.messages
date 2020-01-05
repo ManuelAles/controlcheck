@@ -25,3 +25,6 @@ authenticated.job.form.button.auditRecords = Audit records list from this job
 authenticated.job.form.button.application = Apply for this job
 
 authenticated.job.form.button.return = Return
+
+authenticated.job.form.label.text = XXXX1 information:
+authenticated.job.form.label.moreInfox = Link of more information of XXXX1:

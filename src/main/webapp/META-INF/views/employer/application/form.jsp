@@ -34,6 +34,11 @@
 	<acme:form-textbox code="employer.application.form.label.qualifications" path="qualifications" readonly="true" />
 	<acme:form-textbox code="employer.application.form.label.worker" path="worker.userAccount.username" readonly="true" />
 
+	<jstl:if test="${hasXXXX2 == true}">	
+	<acme:form-textbox code="employer.application.form.label.text" path="text" readonly="true" />
+	<acme:form-password code="employer.application.form.label.password" path="password"  readonly="true" />	
+	</jstl:if>
+
 	<acme:form-submit test="${command == 'show'}" code="employer.application.form.button.update" action="/employer/application/update" />
 	<acme:form-submit test="${command == 'update'}" code="employer.application.form.button.update"
 		action="/employer/application/update" />

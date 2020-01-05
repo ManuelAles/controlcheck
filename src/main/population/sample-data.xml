@@ -872,7 +872,7 @@
 
 	<bean id="xxxx21" class="acme.entities.xxxx2s.XXXX2">
 		<property name="text" value="Sample xxxx2 01" />
-		<property name="password" value="contraseña111@@@" />
+		<property name="password" value="contraseña 1@" />
 		<property name="xxxx1" ref="xxxx11" />
 		<property name="application" ref="application1" />
 	</bean>
