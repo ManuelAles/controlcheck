@@ -867,6 +867,22 @@
 		</property>
 		<property name="job" ref="job2" />
 	</bean>
+	
+	<bean id="xxxx13" class="acme.entities.xxxx1s.XXXX1">
+		<property name="text" value="Sample xxxx1 03" />
+		<property name="moreInfo">
+			<null />
+		</property>
+		<property name="job" ref="job3" />
+	</bean>
+	
+		<bean id="xxxx14" class="acme.entities.xxxx1s.XXXX1">
+		<property name="text" value="Sample xxxx1 04" />
+		<property name="moreInfo">
+			<null />
+		</property>
+		<property name="job" ref="job4" />
+	</bean>
 
 	<!-- XXXX2s -->
 
@@ -875,6 +891,13 @@
 		<property name="password" value="contraseña1@" />
 		<property name="xxxx1" ref="xxxx11" />
 		<property name="application" ref="application1" />
+	</bean>
+	
+	<bean id="xxxx22" class="acme.entities.xxxx2s.XXXX2">
+		<property name="text" value="Sample xxxx2 02" />
+		<property name="password" value="1@contraseñan1@1" />
+		<property name="xxxx1" ref="xxxx12" />
+		<property name="application" ref="application2" />
 	</bean>
 
 
