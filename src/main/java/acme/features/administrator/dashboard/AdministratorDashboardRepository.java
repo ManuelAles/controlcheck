@@ -14,12 +14,12 @@ public interface AdministratorDashboardRepository extends AbstractRepository {
 	Dashboard findOne();
 
 	@Query("select (cast(count(x) as float)/(select count(j) from Job j)) from XXXX1 x")
-	double ratio1();
+	Double ratio1();
 
 	@Query("select (cast(count(x2) as float)/(select count(x1) from XXXX1 x1)) from XXXX2 x2")
-	double ratio2();
+	Double ratio2();
 
 	@Query("select (cast(count(x) as float)/(select count(a) from Application a)) from XXXX2 x")
-	double ratio3();
+	Double ratio3();
 
 }

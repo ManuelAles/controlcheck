@@ -15,7 +15,7 @@
 
 	<bean id="announcement1" class="acme.entities.announcements.Announcement">
 		<property name="title" value="Sample announcement 01" />
-		<property name="moment" value="2019/12/03 10:40" />
+		<property name="moment" value="2019/12/30 10:40" />
 		<property name="moreInfo">
 			<null />
 		</property>
@@ -45,7 +45,7 @@
 
 	<bean id="announcement5" class="acme.entities.announcements.Announcement">
 		<property name="title" value="Sample announcement 05" />
-		<property name="moment" value="2019/12/01 09:40" />
+		<property name="moment" value="2019/12/30 09:40" />
 		<property name="moreInfo" value="http://www.example.com" />
 		<property name="text" value="Este si tiene menos de unos días" />
 	</bean>
@@ -872,7 +872,7 @@
 
 	<bean id="xxxx21" class="acme.entities.xxxx2s.XXXX2">
 		<property name="text" value="Sample xxxx2 01" />
-		<property name="password" value="contraseña199009[[[[]]]" />
+		<property name="password" value="contraseña1@" />
 		<property name="xxxx1" ref="xxxx11" />
 		<property name="application" ref="application1" />
 	</bean>
