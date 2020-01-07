@@ -24,7 +24,7 @@ public class XXXX2 extends DomainEntity {
 
 	// Attributes -----------------------------------
 
-	@Pattern(regexp = "^(?=.*[a-zA-Z]{8})(?=.*?[0-9]{1})(?=.*?[ºª!\"·$%&/()=?¿¡'|@#~€¬`+´ç.,;:_^*¨Ç}{]{1}).{10,}$")
+	@Pattern(regexp = "^(?=.*[a-zA-Z]{8})(?=.*?[0-9]{1})(?=.*?[ºª!\"·$%&/()=?¿¡'|@#~€¬`+´ç.,;:_^*¨Ç}{\\[\\]/-]{1}).{10,}$")
 	private String				password;
 
 	private String				text;
